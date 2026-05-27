@@ -43,12 +43,12 @@ namespace MovieApp
                 }
 
                 Console.Clear();
+            }
 
-                for (int i = 0; i < movies.Count; i++)
-                {
-                    movies[i].DisplayInfo();
-                    Console.WriteLine();
-                }
+            for (int i = 0; i < movies.Count; i++)
+            {
+                movies[i].DisplayInfo();
+                Console.WriteLine();
             }
         }
     }

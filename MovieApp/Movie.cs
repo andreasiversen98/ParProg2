@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovieApp;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,11 +8,13 @@ namespace MovieApp
 
     internal class Movie
     {
-        public string Title;
-        public int Year;
-        public string Director;
-        public string Actors;
-        public string Description;  
+        public string Title { get; set; }
+        public int Year { get; set; }
+        public string Director { get; set; }
+        public string Actors { get; set; }
+        public string Description { get; set; }
+
+
 
         public Movie(string title, int year, string director, string actors, string description)
         {
@@ -28,14 +31,7 @@ namespace MovieApp
             Console.WriteLine($"Year: {Year}");
             Console.WriteLine($"Director: {Director}");
             Console.WriteLine($"Actors: {Actors}");
-            Console.WriteLine($"Description: {Description}");
-        }
-
-        public void AddMovie()
-        {
-            Console.Write("Name: ");
-            string title = Console.ReadLine();
-
+            Console.WriteLine($"Description: {Description}\n");
         }
     }
 }

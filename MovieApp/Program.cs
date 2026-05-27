@@ -26,7 +26,7 @@
 
             Console.Clear();
 
-            Movie movie = new Movie(title, year, director, description, actors);
+            Movie movie = new Movie(title, year, director, actors, description);
 
             movie.DisplayInfo();
 

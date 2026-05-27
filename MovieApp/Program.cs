@@ -42,6 +42,8 @@ namespace MovieApp
                     addingMovies = false;
                 }
 
+                Console.Clear();
+
                 for (int i = 0; i < movies.Count; i++)
                 {
                     movies[i].DisplayInfo();
